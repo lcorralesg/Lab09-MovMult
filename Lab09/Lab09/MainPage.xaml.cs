@@ -21,6 +21,14 @@ namespace Lab09
             {
                 await Navigation.PushAsync(new PinchDemo());
             };
+            Item3.Clicked += async (sender, e) =>
+            {
+                await Navigation.PushAsync(new PanDemo());
+            };
+            Item4.Clicked += async (sender, e) =>
+            {
+                await Navigation.PushAsync(new SwipeDemo());
+            };
         }
     }
 }
